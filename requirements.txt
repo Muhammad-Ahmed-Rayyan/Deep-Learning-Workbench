@@ -4,6 +4,7 @@ pandas
 matplotlib
 seaborn
 scikit-learn
+datasets
 
 # Deep Learning
 tensorflow
