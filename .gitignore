@@ -25,3 +25,5 @@ Thumbs.db
 
 # data
 */data/stanfordnlp___imdb
+TransferLearning/data/cifar-10-python.tar.gz
+TransferLearning/data/cifar-10-batches-py/
