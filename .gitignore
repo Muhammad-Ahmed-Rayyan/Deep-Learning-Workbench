@@ -22,3 +22,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# data
+*/data/stanfordnlp___imdb

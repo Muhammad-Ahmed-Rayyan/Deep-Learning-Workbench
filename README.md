@@ -13,7 +13,7 @@ results.
 | [ANN](./ANN) | Binary classification | Wine Quality (UCI) | ✅ Complete |
 | [CNN](./CNN) | Image classification | Fashion-MNIST | ✅ Complete |
 | [RNN](./RNN) | Sentiment analysis | IMDB Reviews | ✅ Complete |
-| [LSTM](./LSTM) | Sentiment analysis | IMDB Reviews | 🔲 Planned |
+| [LSTM](./LSTM) | Sentiment analysis | IMDB Reviews | ✅ Complete |
 | [TransferLearning](./TransferLearning) | Image classification | CIFAR-10 | 🔲 Planned |
 
 ## Structure
@@ -71,3 +71,7 @@ Replace `<ProjectName>` with the project you're working on (e.g. `CNN`, `RNN`).
 | ANN | Accuracy / ROC-AUC | 0.90 / 0.88 |
 | CNN | Accuracy / Macro F1 | 0.925 / 0.925 |
 | RNN | Accuracy / ROC-AUC | 0.755 / 0.829 |
+| LSTM | Accuracy / ROC-AUC | 0.825 / 0.904 |
+
+**Note:** RNN and LSTM were trained on identical data/hyperparameters to
+isolate the effect of LSTM's gating mechanism — see [LSTM/README.md](./LSTM/README.md#rnn-vs-lstm-comparison) for the full comparison.
