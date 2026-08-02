@@ -1,0 +1,17 @@
+# Core
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# Deep Learning
+tensorflow
+torch
+torchvision
+
+# NLP (for RNN/LSTM projects)
+nltk
+
+# Utilities
+tqdm
