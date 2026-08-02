@@ -31,6 +31,7 @@ Input (11 features)
 ## How to Run
 ```cmd
 pip install -r ../requirements.txt
+cd ann
 python train.py
 python evaluate.py
 ```

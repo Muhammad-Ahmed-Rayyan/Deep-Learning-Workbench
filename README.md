@@ -11,7 +11,7 @@ results.
 | Project | Task | Dataset | Status |
 |---|---|---|---|
 | [ANN](./ANN) | Binary classification | Wine Quality (UCI) | ✅ Complete |
-| [CNN](./CNN) | Image classification | Fashion-MNIST | 🔲 In Progress |
+| [CNN](./CNN) | Image classification | Fashion-MNIST | ✅ Complete |
 | [RNN](./RNN) | Sentiment analysis | IMDB Reviews | 🔲 Planned |
 | [LSTM](./LSTM) | Sentiment analysis | IMDB Reviews | 🔲 Planned |
 | [TransferLearning](./TransferLearning) | Image classification | CIFAR-10 | 🔲 Planned |
@@ -19,6 +19,7 @@ results.
 ## Structure
 
 Each project folder follows the same layout:
+
 ```
 <ProjectName>/
 ├── data/           # Dataset (downloaded automatically or included)
@@ -38,9 +39,11 @@ Each project folder follows the same layout:
 
 ## How to Run
 
+Each project (`ANN`, `CNN`, `RNN`, `LSTM`, `TransferLearning`) follows the same two-step workflow: train on GPU via Colab, then evaluate locally.
+
 ### Option A — Local (CPU, for evaluation only — recommended after training in Colab)
 ```cmd
-cd ANN
+cd <ProjectName>
 python -m venv venv
 venv\Scripts\activate
 pip install -r ../requirements.txt
@@ -52,17 +55,18 @@ python evaluate.py
 2. In a new Colab notebook:
 ```python
 !git clone https://github.com/<your-username>/<your-repo-name>.git
-%cd <your-repo-name>/ANN
+%cd <your-repo-name>/<ProjectName>
 !pip install -r ../requirements.txt
 !python train_colab.py
 ```
-3. Download the generated `models/ann_model.keras` and `results/test_data.npz` from Colab's file browser.
-4. Place them into your local `ANN/models/` and `ANN/results/` folders respectively.
+3. Download the generated files from `models/` and `results/` using Colab's file browser.
+4. Place them into your local `<ProjectName>/models/` and `<ProjectName>/results/` folders respectively.
+
+Replace `<ProjectName>` with the project you're working on (e.g. `CNN`, `RNN`).
 
 ## Results Summary
-
-_(Updated as each project is completed — see individual project READMEs for full details)_
 
 | Project | Key Metric | Score |
 |---|---|---|
 | ANN | Accuracy / ROC-AUC | 0.90 / 0.88 |
+| CNN | Accuracy / Macro F1 | 0.925 / 0.925 |
